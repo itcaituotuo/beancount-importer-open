@@ -24,12 +24,13 @@ class Rules:
         (ProviderEnum.WECHAT, '转入零钱通-来自零钱', '', '', '/', '零钱', '支付成功', AccountEnum.ASSETS_CURRENT_WECHAT_MINIFUND, AccountEnum.ASSETS_CURRENT_WECHAT_WALLET)
     ]
 
-
+    # 对应支付宝账单字段&借贷账户：供应商, 交易分类, 交易对方, 商品说明, 收/支, 收/付款方式, 交易状态, 借方, 贷方
     alipay_rules = [
         # 支出
         # 借：费用增加 贷：资产减少
         (ProviderEnum.ALIPAY, '服饰装扮', '', '', '支出', '招商银行.*1234', '交易成功|等待确认收货', AccountEnum.EXPENSES_CLOTHING, AccountEnum.ASSETS_CURRENT_BANK_CMB_Debit1234),
         (ProviderEnum.ALIPAY, '餐饮美食', '', '', '支出', '招商银行.*1234', '交易成功|等待确认收货', AccountEnum.EXPENSES_FOOD, AccountEnum.ASSETS_CURRENT_BANK_CMB_Debit1234),
+        (ProviderEnum.ALIPAY, '交通出行', '', '', '支出', '招商银行.*1234', '交易成功|等待确认收货', AccountEnum.EXPENSES_TRANSPORT, AccountEnum.ASSETS_CURRENT_BANK_CMB_Debit1234),
 
         # 支出
         # 借：费用增加 贷：负债增加

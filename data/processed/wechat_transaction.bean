@@ -1,0 +1,12 @@
+2024-12-27 * "美团" "XXX-美团App-241227111003000066666666"
+    Expenses:Food 55.50 CNY
+    Assets:Current:Bank:CMB:Debit1234 -55.50 CNY
+2024-12-26 * "/" "转入零钱通-来自零钱"
+    Assets:Current:Wechat:MiniFund 0.02 CNY
+    Assets:Current:Wechat:Wallet -0.02 CNY
+2024-12-26 * "张三" "微信红包"
+    Assets:Current:Wechat:Wallet 0.02 CNY
+    Income:Other -0.02 CNY
+
+未匹配到规则的订单共1条：
+['2024-12-26 19:32:47', '测试未匹配', '王五', '/', '收入', '¥0.03', '/', '已存入零钱', '180000889600841226701384012345', '180000889600841226701384012345', '/']
