@@ -1,7 +1,27 @@
-## 微信&支付宝账单 -> beancount账单
+# beancount-importer-open
 
-### 使用说明
-1. 下载微信&支付宝账单，并解压到data/bank_statements目录下（微信&支付宝每次只能放一份文件）
-2. 配置账户枚举（对应beancount里的账户），constants/enums.py文件AccountEnum
-3. 配置账单解析规则，src/accounting/rules.py
-4. 运行main.py，生成beancount账单，data/processed目录下
+> 功能：自动将`微信`、`支付宝`账单转换成 beancount 账单。
+
+
+
+### 使用指南
+
+1. **下载账单并解压**
+
+   下载 **微信** 和 **支付宝** 的账单文件，并将其解压到 data/bank_statements 目录中（每次仅支持处理一份微信和一份支付宝账单文件）。
+
+2. **配置账户映射**
+
+   打开 constants/enums.py 文件，设置 AccountEnum 枚举，以确保账单中的账户与 **beancount** 配置中的账户相对应。
+
+3. **自定义账单解析规则**
+
+   在 src/accounting/rules.py 文件中，根据需要调整账单解析规则。
+
+4. **生成 beancount 格式账单**
+
+   运行 main.py，生成的 beancount 格式账单文件将保存到 data/processed 目录中。
+
+
+
+通过以上步骤，即可快速将微信和支付宝账单转换为 beancount 记账格式！
