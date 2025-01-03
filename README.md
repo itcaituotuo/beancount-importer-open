@@ -6,6 +6,8 @@
 
 ### 使用指南
 
+详细说明：[自动记账：Python+Beancount](https://mp.weixin.qq.com/s/G_oJR__hKfEmB4tMQ8Po-w?token=227064824&lang=zh_CN)
+
 1. **下载账单并解压**
 
    下载 **微信** 和 **支付宝** 的账单文件，并将其解压到 data/bank_statements 目录中（每次仅支持处理一份微信账单和一份支付宝账单文件）。
